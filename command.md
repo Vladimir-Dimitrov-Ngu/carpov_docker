@@ -103,3 +103,11 @@ docker run <image>
     docker build -t <name_image:tag> <path>
     
 ```
+
+### Дополнительные команды
+
+- Посмотреть размер образов
+```
+    docker system df
+    
+```
