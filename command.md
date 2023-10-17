@@ -5,7 +5,6 @@
 ```
 docker run --rm --platform=linux/amd64 kcoursedocker/task-1.1
 ```
-+ 
 ## Основные команды
 
 + Создать образ на основе контейнер
@@ -84,30 +83,33 @@ docker run <image>
 + Войти и изменить код в контейнере
 ```
     docker exec -it <container> bash 
-  
 ```
 ### Bash
 + Передать значение в другую команду
 
 ```
     $(command)
-  
 ```
 
 + `.` - current directory 
+
+
++ Создать файл
+
+```
+    touch <filename>
+```
 
 ## Работа с Dockerfile 
 
 + Запустить сборку
 ```
     docker build -t <name_image:tag> <path>
-    
 ```
 
 ### Дополнительные команды
 
 - Посмотреть размер образов
 ```
-    docker system df
-    
+    docker system df 
 ```
